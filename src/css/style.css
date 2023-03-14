@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+
+body {
+    display: flex;
+    background-color: var(--background-color);
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
+}
+
+hr {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.cartao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    border-radius: 15px;
+    background-color: var(--cor-cartao);
+    margin: 25px;
+    width: 485px;
+    height: 280px;
+}
+
+.cartao .dica {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    text-align: center;
+}
+
+.cartao .descricao-cartao {
+    padding: 23px;
+    color: var(--text-color);
+}
+
+.cartao .id-dica {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    color: var(--cor-dado);
+    margin-top: 30px;
+}
+
+.dado {
+    background-color: var(--cor-dado);
+    display: flex;
+    align-items: flex-end;
+    border-radius: 50%;
+    padding: 10px;
+    transform: translateY(50%);
+}
+
+.dado:hover {
+    color: #53ffab;
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--cor-dado);
+}
